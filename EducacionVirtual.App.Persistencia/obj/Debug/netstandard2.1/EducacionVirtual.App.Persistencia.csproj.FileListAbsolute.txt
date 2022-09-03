@@ -1,0 +1,12 @@
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\obj\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.csprojAssemblyReference.cache
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\obj\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.AssemblyInfoInputs.cache
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\obj\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.AssemblyInfo.cs
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\obj\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.csproj.CoreCompileInputs.cache
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\bin\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.deps.json
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\bin\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.dll
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\bin\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.pdb
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\bin\Debug\netstandard2.1\EducacionVirtual.App.Dominio.dll
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\bin\Debug\netstandard2.1\EducacionVirtual.App.Dominio.pdb
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\obj\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.csproj.CopyComplete
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\obj\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.dll
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Persistencia\obj\Debug\netstandard2.1\EducacionVirtual.App.Persistencia.pdb
