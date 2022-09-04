@@ -1,0 +1,9 @@
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\obj\Debug\netstandard2.0\EducacionVirtual.App.Dominio.csprojAssemblyReference.cache
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\obj\Debug\netstandard2.0\EducacionVirtual.App.Dominio.AssemblyInfoInputs.cache
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\obj\Debug\netstandard2.0\EducacionVirtual.App.Dominio.AssemblyInfo.cs
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\obj\Debug\netstandard2.0\EducacionVirtual.App.Dominio.csproj.CoreCompileInputs.cache
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\bin\Debug\netstandard2.0\EducacionVirtual.App.Dominio.deps.json
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\bin\Debug\netstandard2.0\EducacionVirtual.App.Dominio.dll
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\bin\Debug\netstandard2.0\EducacionVirtual.App.Dominio.pdb
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\obj\Debug\netstandard2.0\EducacionVirtual.App.Dominio.dll
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Dominio\obj\Debug\netstandard2.0\EducacionVirtual.App.Dominio.pdb
