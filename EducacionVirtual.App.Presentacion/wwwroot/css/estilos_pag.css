@@ -1,0 +1,506 @@
+@charset "utf-8";
+@import url("Biko/stylesheet.css");
+@import url("Montserrat_Regular/stylesheet.css");
+@import url("Montserrat_Bold/stylesheet.css");
+/* CSS Document */
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #2a2b2e; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #2745F2;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #415CF2;
+  }
+
+#cuerpo {
+	width: 95%;
+	background-color: #202124;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+#cuerpo #encabezado {
+	width: 100%;
+	float: left;
+	background-color: #5674b9;
+}
+#cuerpo #encabezado .navbar {
+    width: 80%;
+    height: 50px;
+    background-color: #1A1D21;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 30px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Biko';
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: #BDC5F2;
+}
+#cuerpo #encabezado #logo {
+	width: 20%;
+	height: 50px;
+	float: left;
+	box-sizing: border-box;
+	background-image: url(../imagenes/logo_pequeno.png);
+	margin-left: 270px;
+}	
+.img-magnifier-container {
+    float: left;
+	width: 100%;
+	height: 600px;
+	box-sizing: border-box;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 80px;
+  height: 80px;
+}
+#cuerpo #nosotros {
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 40px;
+}
+
+#cuerpo #nosotros #img {
+	width: 33%;
+	float: left;
+	background-color: #ACD373;
+	height: 510px;
+	text-align: left;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-image: url(../imagenes/2.jpg);
+}
+#cuerpo #nosotros #img2 {
+	width: 33%;
+	float: left;
+	background-color: #FFF568;
+	height: 510px;
+	margin-left: 6px;
+	margin-right: 6px;
+	box-sizing: border-box;
+	background-image: url(../imagenes/1.jpg);
+}
+#cuerpo #nosotros #img3 {
+	width: 33%;
+	float: left;
+	background-color: #FBAF5D;
+	height: 510px;
+	box-sizing: border-box;
+	background-image: url(../imagenes/3.jpg);
+}
+#cuerpo #informacion01 {
+	
+	width: 100%;
+	float: left;
+	height: 160px;
+	box-sizing: border-box;
+	text-align: center;	
+}
+#cuerpo #informacion01 h2 {
+	font-size: xx-large;
+	font-family: 'Montserrat Bold';
+	color: #FFFFFF;
+}
+#cuerpo #informacion01 p {
+	font-size: large;
+	font-family: 'Montserrat Regular';
+	color: #FFFFFF;	
+}
+#cuerpo #cursos {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+#cuerpo #cursos #curso {
+	width: 47%;
+	height: 500px;
+	float: left;
+	background-color: #F49AC1;
+	box-sizing: border-box;
+	background-image: url(../imagenes/p1-1.jpg);
+}
+#cuerpo #cursos #curso2 {
+	width: 25%;
+	height: 500px;
+	float: left;
+	background-color: #BD8CBF;
+	box-sizing: border-box;
+	background-image: url(../imagenes/p2-2.jpg);
+	margin-left: 19px;
+	margin-right: 19px;
+}
+#cuerpo #cursos #curso3 {
+	width: 25%;
+	height: 500px;
+	float: left;
+	background-color: #76CB4E;
+	box-sizing: border-box;
+	background-image: url(../imagenes/p3-3.jpg);
+}
+#cuerpo #informacion02 {
+	color: #FFFFFF;
+	width: 100%;
+	float: left;
+	height: 180px;
+	box-sizing: border-box;
+	text-align: center;
+}
+#cuerpo #informacion02 h2 {
+	font-size: xx-large;
+	font-family: 'Montserrat Bold';
+}
+#cuerpo #informacion02 p {
+	font-size: large;
+	font-family: 'Montserrat Regular';
+}
+#cuerpo #informacion02 a {
+	font-size: large;
+	font-family: 'Montserrat Regular';
+	text-decoration: none;
+	color: #2745F2;
+}
+#cuerpo #informacion02 a:hover{
+	color: #415CF2;
+	font-family: 'Montserrat Regular';
+}
+#cuerpo #contacto {
+	float: left;
+	height: 680px;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+.card {
+  color: #FFFFFF;
+  background-color: #0a0e16;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  float: left;
+  margin-left: 32px;
+  margin-top: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.container {
+  padding: 2px 16px;
+  font-family: 'Montserrat Regular';
+}
+
+.container b{
+	font-family: 'Biko';
+}
+
+#cuerpo #piedepagina {
+	background-color: #06080D;
+	float: left;
+	height: 80px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#cuerpo #piedepagina h3 {
+	text-align: center;
+	padding-top: 10px;
+	color: #415CF2;
+	font-family: 'Biko';
+}
+
+#cuerpo #piedepagina #back_to_top {
+    width: 10%;
+    height: 10px;
+    float: left;
+    box-sizing: border-box;
+    margin-top: -52px;
+    margin-left: 1160px;
+}
+
+/*Media Querys*/
+/*Query Ipad pro*/
+@media (min-width:812px) and (max-width: 1336px) {
+	
+	#cuerpo #encabezado #logo {
+	width: 20%;
+	background-color: #1F2A83;
+	height: 190px;
+	float: left;
+}
+	
+	#cuerpo #encabezado #menus {
+    width: 80%;
+    height: 190px;
+    background-color: #8A002A;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+	
+	#cuerpo #presentacion {
+    float: left;
+    width: 100%;
+    background-color: #76B300;
+    height: 640px;
+}
+
+	#cuerpo #nosotros {
+	width: 100%;
+	background-color: #555555;
+	float: left;
+}
+	
+	#cuerpo #nosotros #subnosotros {
+	width: 100%;
+	float: left;
+	background-color: #E552B7;
+	height: 640px;
+	text-align: left;
+	font-size: 14px;
+}
+	
+	#cuerpo #nosotros #texto01 {
+	width: 100%;
+	float: left;
+	background-color: #A09500;
+	height: 660px;
+}
+#cuerpo #nosotros #imgtexto01 {
+	width: 100%;
+	float: left;
+	background-color: #B36C2E;
+	height: 660px;
+}
+#cuerpo #informacion01 {
+	background-color: #2876FF;
+	width: 100%;
+	float: left;
+	height: 425px;
+}
+#cuerpo #trabajos {
+	float: left;
+	background-color: #FFC6C6;
+	width: 100%;
+}
+#cuerpo #trabajos #marcos {
+	width: 100%;
+	height: 710px;
+	float: left;
+	background-color: #47008C;
+}
+#cuerpo #trabajos #ver_mas {
+	width: 100%;
+	height: 160px;
+	float: left;
+	background-color: #6A0000;
+}
+#cuerpo #programas {
+	width: 100%;
+	height: 740px;
+	float: left;
+	background-color: #AB38C4;
+}
+#cuerpo #programas #videoplay {
+    width: 90%;
+    height: 650px;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    background-color: #11CD90;
+}
+#cuerpo #servicios {
+	width: 50%;
+	height: 660px;
+	float: left;
+	background-color: #585858;
+}
+#cuerpo #testimonios {
+	width: 50%;
+	height: 660px;
+	float: left;
+	background-color: #FFFD09;
+}
+#cuerpo #informacion02 {
+	background-color: #030052;
+	width: 100%;
+	height: 460px;
+	float: left;
+}
+#cuerpo #contacto {
+	float: left;
+	height: 610px;
+	width: 100%;
+	background-color:#40DF3E ;
+}
+#cuerpo #piedepagina {
+	background-color: #C04100;
+	float: left;
+	height: 300px;
+	width: 100%;
+}
+	
+}
+
+/*Query Iphone X*/
+@media (min-width:375px) and (max-width: 812px) {
+	#cuerpo #encabezado #logo {
+	width: 100%;
+	background-color: #FF6700;
+	height: 50px;
+	float: left;
+}
+	
+	#cuerpo #encabezado #menus {
+    width: 100%;
+    height: 70px;
+    background-color: #A2D125;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+	
+	#cuerpo #presentacion {
+    float: left;
+    width: 100%;
+    background-color: #FF88F7;
+    height: 440px;
+}
+
+	#cuerpo #nosotros {
+	width: 100%;
+	background-color: #8C8C8C;
+	float: left;
+}
+	
+	#cuerpo #nosotros #subnosotros {
+	width: 100%;
+	float: left;
+	background-color: #243F00;
+	height: 440px;
+	text-align: left;
+	font-size: 14px;
+}
+	
+	#cuerpo #nosotros #texto01 {
+	width: 50%;
+	float: left;
+	background-color: #530001;
+	height: 270px;
+}
+#cuerpo #nosotros #imgtexto01 {
+	width: 50%;
+	float: left;
+	background-color: #B17F00;
+	height: 270px;
+}
+#cuerpo #informacion01 {
+	background-color: #00026F;
+	width: 100%;
+	float: left;
+	height: 380px;
+}
+#cuerpo #trabajos {
+	float: left;
+	background-color: #44DD55;
+	width: 100%;
+}
+#cuerpo #trabajos #marcos {
+	width: 100%;
+	height: 440px;
+	float: left;
+	background-color: #FAFF4F;
+}
+#cuerpo #trabajos #ver_mas {
+	width: 100%;
+	height: 210px;
+	float: left;
+	background-color: #00FFFB;
+}
+#cuerpo #programas {
+	width: 100%;
+	height: 440px;
+	float: left;
+	background-color: #AC6B00;
+}
+#cuerpo #programas #videoplay {
+    width: 90%;
+    height: 300px;
+    margin-left: auto;
+    margin-top: 70px;
+    margin-right: auto;
+    background-color: #3B945E;
+}
+#cuerpo #servicios {
+	width: 100%;
+	height: 380px;
+	float: left;
+	background-color: #DC809D;
+}
+#cuerpo #testimonios {
+	width: 100%;
+	height: 280px;
+	float: left;
+	background-color: #A37AB0;
+}
+#cuerpo #informacion02 {
+	background-color: #C31C4B;
+	width: 100%;
+	height: 380px;
+	float: left;
+}
+#cuerpo #contacto {
+	float: left;
+	height: 440px;
+	width: 100%;
+	background-color: #887E1C;
+}
+#cuerpo #piedepagina {
+	background-color: #B8BCFF;
+	float: left;
+	height: 80px;
+	width: 100%;
+}
+	
+}

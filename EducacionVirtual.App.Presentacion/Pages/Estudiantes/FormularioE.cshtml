@@ -1,0 +1,87 @@
+﻿@page
+@model EducacionVirtual.App.Presentacion.Pages.FormularioEModel
+@{
+}
+
+
+</br>
+</br>
+<H3 class="text-info;" style="text-align: center;">Registrarse</H3>
+<br>
+<div class="border container" >
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="container" style="padding: 50px; ">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label asp-for="Estudiante.Nombre"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Estudiante.Nombre" class="form-control">
+                        </div>                        
+                        <span asp-validation-for="Estudiante.Nombre" class="text-danger"></span>
+                        <div class="col-sm-2">
+                            <label asp-for="Estudiante.Apellidos"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Estudiante.Apellidos" class="form-control">
+                        </div>                        
+                        <span asp-validation-for="Estudiante.Apellidos" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label asp-for="Estudiante.Email"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Estudiante.Email" class="form-control">
+                        </div>                        
+                        <span asp-validation-for="Estudiante.Email" class="text-danger"></span>
+                        <div class="col-sm-2">
+                            <label asp-for="Estudiante.Edad"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Estudiante.Edad" class="form-control">
+                        </div>
+                        <span asp-validation-for="Estudiante.Edad" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label asp-for="Estudiante.Telefono"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Estudiante.Telefono" class="form-control">
+                        </div>                        
+                        <span asp-validation-for="Estudiante.Telefono" class="text-danger"></span>
+                         <div class="col-sm-2">
+                            <label asp-for="Estudiante.Direccion"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Estudiante.Direccion" class="form-control">
+                        </div>                        
+                        <span asp-validation-for="Estudiante.Direccion" class="text-danger"></span>
+                    </div>
+                </div>
+                 <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2 offset-sm-2">
+                        <input type="submit" value= "Crear" class="btn btn-primary form-control" >
+                    </div>
+                    <div class="col-sm-2">
+                        <a asp-page="/Index" class="btn btn-success form-control" >Volver</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        
+    </form>
+</div>            
+
