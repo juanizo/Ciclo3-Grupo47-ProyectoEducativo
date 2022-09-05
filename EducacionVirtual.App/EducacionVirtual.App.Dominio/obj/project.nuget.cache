@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WatSMX5A/o8JCy7nHQze8Jsa9zwYQge2cWhZwPL6Kn9riZZXxI9goLhwlWmVpm71l0Fj0kuPc+tpZUbgXlkRLQ==",
+  "success": true,
+  "projectFilePath": "D:\\Educativa\\EducacionVirtual.App\\EducacionVirtual.App.Dominio\\EducacionVirtual.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jsgc2\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jsgc2\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
