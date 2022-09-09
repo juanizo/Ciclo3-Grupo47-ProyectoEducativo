@@ -4,73 +4,73 @@
 @{
 }
 
-
-<div id="cuerpo">
-  <div id="encabezado">
-    <div class="navbar">
-     <a href="#Inicio">Inicio</a>
-     <a href="#asignaturas">Asignaturas</a>
-     <a href="#Contacto">Contacto</a>
-     <a asp-page="/InicioSesion/IniciarSesion">Iniciar sesión</a>
-	 <div id="logo"></div>
-     </div>
-  </div>
-</br>
-</br>
-</br>
-</br>
-<H3 class="text-info;" style="text-align: center;">Iniciar Sesion</H3>
-</br>
-<div class="border container">
-    <form method="post">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="container" style="padding-left: 400px; padding-top:15px; padding-bottom: 15px;">
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <label asp-for="Estudiante.Usuario"></label>
-                    </div>
-                    <div class="col-sm-4">
-                        <input asp-for="Estudiante.Usuario" class="form-control">
-                    </div>
-                    <span asp-validation-for="Estudiante.Usuario" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <label asp-for="Estudiante.Contrasena"></label>
-                    </div>
-                    <div class="col-sm-4">
-                        <input asp-for="Estudiante.Contrasena" class="form-control">
-                    </div>
-                    <span asp-validation-for="Estudiante.Contrasena" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <input type="submit" value="Iniciar Sesion" class="btn btn-primary form-control">
-                        <a class="offset-sm-3">¿Olvidaste tu contraseña?</a>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-4 offset-sm-1">
-                        </br>
-                        <a asp-page="/Estudiantes/FormularioE" class="btn btn-success form-control">Crear cuenta nueva</a>
-                    </div>
-                </div>
-            </div>
+<footer id="cuerpo">
+    <div id="encabezado">
+        <div class="navbar">
+            <div id="logo"></div>
         </div>
-    </form>
-</div>
-
-<footer class="border-top footer text-muted" style="background-color: #fff ;">
-    <div class="container">
-        &copy; 2022 - EducacionVirtual.App.Presentacion - <a asp-area="" asp-page="/Privacy">Privacy</a>
     </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    <h3 class="text-info;">Iniciar Sesion</h3>
+    </br>
+    <div class="container" style="background-color: #1A1D21; border-color: #1A1D21;">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="container" style="padding-left: 400px; padding-top:15px; padding-bottom: 15px;">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label asp-for="Estudiante.Usuario"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Estudiante.Usuario" class="form-control">
+                        </div>
+                        <span asp-validation-for="Estudiante.Usuario" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label asp-for="Estudiante.Contrasena"></label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input asp-for="Estudiante.Contrasena" class="form-control">
+                        </div>
+                        <span asp-validation-for="Estudiante.Contrasena" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="submit" value="Iniciar Sesion" class="btn btn-primary form-control">
+                            <a  class="offset-sm-2" style="color: #fff ;" href="#olvido">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4 offset-sm-1">
+                            </br>
+                            <a asp-page="/Estudiantes/FormularioE" class="btn btn-success form-control">Crear cuenta
+                                nueva</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</footer>
+</div>
+<div id="piedepagina">
+    <h3>© Copyright Enki 2022</h3>
+    <div id="back_to_top">
+        <a href="#"><img src="imagenes/b_top.png" 100%" alt="" /></a>
+    </div>
+</div>
 </footer>
