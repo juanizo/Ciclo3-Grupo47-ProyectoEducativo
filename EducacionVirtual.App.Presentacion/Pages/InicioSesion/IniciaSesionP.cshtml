@@ -1,0 +1,97 @@
+﻿@page
+@model EducacionVirtual.App.Presentacion.Pages.IniciaSesionPModel
+@{
+}
+
+<div id="cuerpo">
+    <div id="encabezado">
+        <div class="navbar">
+            <div id="logo"></div>
+        </div>
+    </div>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    <h3 class="text-info;">Iniciar Sesion</h3>
+    </br>
+
+    <div style="padding-left: 500px; padding-right:500px;">
+        <div class="container" style="background-color: #1A1D21; max-width:1180px; min-width: 312px;">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="container" style="padding-left: 280px; padding-top:15px; padding-bottom: 15px;">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Usuario"></label>
+                            </div>
+                            <div class="col-sm-5">
+                                <input asp-for="Profesor.Usuario" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Usuario" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Contrasena"></label>
+                            </div>
+                            <div class="col-sm-5">
+                                <input asp-for="Profesor.Contrasena" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Contrasena" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="submit" value="Iniciar Sesion" class="btn btn-primary form-control">
+                                <a class="offset-sm-2" style="color: #fff ;" href="#olvido">¿Olvidaste tu
+                                    contraseña?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-5 offset-sm-1">
+                                </br>
+                                <a asp-page="/Profesor/RegistroProfesor" class="btn btn-success form-control">Crear cuenta
+                                    nueva</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+
+    <div id="piedepagina">
+        <h3>© Copyright Enki 2022</h3>
+        <div id="back_to_top">
+            <a href="#"><img src="imagenes/b_top.png" 100%" alt="" /></a>
+        </div>
+    </div>
+
+</div>

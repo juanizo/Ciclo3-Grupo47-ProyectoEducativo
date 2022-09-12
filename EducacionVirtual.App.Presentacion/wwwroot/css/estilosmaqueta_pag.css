@@ -77,7 +77,6 @@ li a:hover:not(.active) {
 }
 .active {
 	background-color: blue;
-	text-color: blue;
 	color: #FCFCFC;
 	text-decoration: underline;
 }
@@ -99,7 +98,8 @@ li a:hover:not(.active) {
 	font-family: Arial, Helvetica, sans-serif;
 }
 #cuerpo #piedepagina {
-
+	width: 50%;
+	float: left;	
 }
 #footer01 .row.row-padded-bottom .col-md-6 {
 	padding-left: 25px;
