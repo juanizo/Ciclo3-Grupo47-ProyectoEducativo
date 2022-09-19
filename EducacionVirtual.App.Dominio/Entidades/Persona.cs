@@ -4,23 +4,23 @@ namespace EducacionVirtual.App.Dominio
 {
     public class Persona{
         public int Id{get;set;}
-        [Required]
-        public string Nombre{get;set;}
-        [Required]
+        //[Required]
+        public string Name{get;set;}
+        //[Required]
         public string Apellidos{get;set;}
-        [Required]
+        //[Required]
         public string Email{get;set;}
-        [Required]
+        //[Required]
         public int Edad{get;set;}
-        [Required]
+        //[Required]
         public string Telefono{get;set;}
-        [Required]
+        //[Required]
         public string Direccion{get;set;}
-        [Required]
+
         public string Usuario{get;set;}
-        [Required]
+        //[Required]
         public string Contrasena{get;set;}
-        [Required]
+        
         public string Codigo{get;set;}
     }
 }

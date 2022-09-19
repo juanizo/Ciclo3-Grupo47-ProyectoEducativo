@@ -18,99 +18,215 @@
     </br>
     <H3 class="text-info;">Registrarse</H3>
     <br>
-    <div class="container"   style="background-color: #1A1D21; ">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="container" style="padding: 50px; ">
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <label asp-for="Estudiante.Nombre"></label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input asp-for="Estudiante.Nombre" class="form-control">
-                        </div>
-                        <span asp-validation-for="Estudiante.Nombre" class="text-danger"></span>
-                        <div class="col-sm-2">
-                            <label asp-for="Estudiante.Apellidos"></label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input asp-for="Estudiante.Apellidos" class="form-control">
-                        </div>
-                        <span asp-validation-for="Estudiante.Apellidos" class="text-danger"></span>
-                    </div>
-                </div>
+    <br>
+    <br>
+    <div style="margin-bottom: 328px;">
+        <div class="container">
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <label asp-for="Estudiante.Email"></label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input asp-for="Estudiante.Email" class="form-control">
-                        </div>
-                        <span asp-validation-for="Estudiante.Email" class="text-danger"></span>
-                        <div class="col-sm-2">
-                            <label asp-for="Estudiante.Edad"></label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input asp-for="Estudiante.Edad" class="form-control">
-                        </div>
-                        <span asp-validation-for="Estudiante.Edad" class="text-danger"></span>
-                    </div>
-                </div>
+            <ul class="selectedi">
+                <li>
+                    <a href="#Estudiante" class="btnestu" id="show" name="Estudiante" >Estudiante</a>
+                </li>
+                <li>
+                    <a href="#Profesor" class=" btnprofe" id="hide" name="Profesor">Profesor</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
 
+        <div class="container" id="divs1">
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <label asp-for="Estudiante.Telefono"></label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input asp-for="Estudiante.Telefono" class="form-control">
-                        </div>
-                        <span asp-validation-for="Estudiante.Telefono" class="text-danger"></span>
-                        <div class="col-sm-2">
-                            <label asp-for="Estudiante.Direccion"></label>
-                        </div>
-                        <div class="col-sm-4">
-                            <input asp-for="Estudiante.Direccion" class="form-control">
-                        </div>
-                        <span asp-validation-for="Estudiante.Direccion" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-2 offset-sm-2">
-                            <input type="submit" value="Crear" class="btn btn-primary form-control">
-                        </div>
-                        <div class="col-sm-2">
-                            <a asp-page="/Index" class="btn btn-success form-control">Volver</a>
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="container" style="padding: 50px; ">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Estudiante.Name"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Estudiante.Name" class="form-control">
+                            </div>
+                            <span asp-validation-for="Estudiante.Name" class="text-danger"></span>
+                            <div class="col-sm-2">
+                                <label asp-for="Estudiante.Apellidos"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Estudiante.Apellidos" class="form-control">
+                            </div>
+                            <span asp-validation-for="Estudiante.Apellidos" class="text-danger"></span>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Estudiante.Email"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Estudiante.Email" class="form-control">
+                            </div>
+                            <span asp-validation-for="Estudiante.Email" class="text-danger"></span>
+                            <div class="col-sm-2">
+                                <label asp-for="Estudiante.Edad"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Estudiante.Edad" class="form-control">
+                            </div>
+                            <span asp-validation-for="Estudiante.Edad" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Estudiante.Telefono"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Estudiante.Telefono" class="form-control">
+                            </div>
+                            <span asp-validation-for="Estudiante.Telefono" class="text-danger"></span>
+                            <div class="col-sm-2">
+                                <label asp-for="Estudiante.Direccion"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Estudiante.Direccion" class="form-control">
+                            </div>
+                            <span asp-validation-for="Estudiante.Direccion" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label >Contraseña</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Estudiante.Contrasena" class="form-control">
+                            </div>
+                            <span asp-validation-for="Estudiante.Contrasena" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2 offset-sm-2">
+                                <input type="submit" value="Crear" class="btn btn-primary form-control">
+                            </div>
+                            <div class="col-sm-2">
+                                <a asp-page="/InicioSesion/IniciarSecion"
+                                    class="btn btn-success form-control">Volver</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
+            </form>
+           
+        </div>
 
-        </form>
+        <!-- Registro profesor-->
+
+        <div class="container" id="divs">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="container" style="padding: 50px; ">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Name"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Profesor.Name" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Name" class="text-danger"></span>
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Apellidos"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Profesor.Apellidos" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Apellidos" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Email"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Profesor.Email" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Email" class="text-danger"></span>
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Edad"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Profesor.Edad" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Edad" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Telefono"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Profesor.Telefono" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Telefono" class="text-danger"></span>
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Direccion"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Profesor.Direccion" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Direccion" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label asp-for="Profesor.Especializacion"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Profesor.Especializacion" class="form-control" >
+                            </div>
+                            <span asp-validation-for="Profesor.Especializacion" class="text-danger"></span>
+                            <div class="col-sm-2">
+                                <label >Contraseña</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input asp-for="Profesor.Contrasena" class="form-control">
+                            </div>
+                            <span asp-validation-for="Profesor.Contrasena" class="text-danger"></span>
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2 offset-sm-2">
+                                <input type="submit" value="Crear" class="btn btn-primary form-control">
+                            </div>
+                            <div class="col-sm-2">
+                                <a asp-page="/Index" class="btn btn-success form-control">Volver</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </form>
+        </div>
     </div>
 
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
+
 
     <div id="piedepagina">
         <h3>© Copyright Enki 2022</h3>
@@ -120,3 +236,5 @@
     </div>
 
 </div>
+
+<script>

@@ -6,23 +6,9 @@ namespace EducacionVirtual.App.Persistencia
 {
 public class RepositoriosEstudiante : IRepositoriosEstudiante
 {
-    
-        ///<summary>    
-        //Referencia al Contexto del paciente
-        /// </summary>
 
-        private readonly AppContext _appContext;
-        /// <summary>
-        /// Metodo constructor utiliza 
-        /// Inyeccion de dpendencia al utilizar
-        ///</summary>
-        /// <param  name= "appContext"></param>//
-
-        public RepositoriosEstudiante (AppContext appContext)
-        {
-            _appContext = appContext;
-        }
-
+        private readonly AppContext _appContext = new AppContext();
+   
         Estudiante IRepositoriosEstudiante.AddEstudiante(Estudiante estudiante)
         {
             var estudianteAdicionado = _appContext.Estudiantes.Add(estudiante);
@@ -57,7 +43,7 @@ public class RepositoriosEstudiante : IRepositoriosEstudiante
         {
             var estudianteEncontrado = _appContext.Estudiantes.FirstOrDefault(p => p.Id == estudiante.Id);
             if(estudianteEncontrado != null){
-                estudianteEncontrado.Nombre = estudiante.Nombre;
+                estudianteEncontrado.Name = estudiante.Name;
                 estudianteEncontrado.Apellidos = estudiante.Apellidos;
                 estudianteEncontrado.Email = estudiante.Email;
                 estudianteEncontrado.Edad = estudiante.Edad;

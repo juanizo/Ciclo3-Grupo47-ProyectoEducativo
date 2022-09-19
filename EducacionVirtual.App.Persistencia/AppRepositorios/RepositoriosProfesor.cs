@@ -7,22 +7,11 @@ namespace EducacionVirtual.App.Persistencia
     public class RepositoriosProfesor : IRepositoriosProfesor
     {
         
-        ///<summary>    
-        //Referencia al Contexto 
-        /// </summary>
+       
 
-        private readonly AppContext _appContext;
-        /// <summary>
-        /// Metodo constructor utiliza 
-        /// Inyeccion de dpendencia al utilizar
-        ///</summary>
-        /// <param  name= "appContext"></param>//
-
-        public RepositoriosProfesor (AppContext appContext)
-        {
-            _appContext = appContext;
-        }
-
+        private readonly AppContext _appContext = new AppContext();
+        
+       
         Profesor IRepositoriosProfesor.AddProfesor(Profesor profesor)
         {
             var profesorAdicionado = _appContext.Profesores.Add(profesor);
@@ -57,7 +46,7 @@ namespace EducacionVirtual.App.Persistencia
         {
             var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.Id == profesor.Id);
             if(profesorEncontrado != null){
-                profesorEncontrado.Nombre = profesor.Nombre;
+                profesorEncontrado.Name = profesor.Name;
                 profesorEncontrado.Apellidos = profesor.Apellidos;
                 profesorEncontrado.Email = profesor.Email;
                 profesorEncontrado.Edad = profesor.Edad;

@@ -12,6 +12,7 @@ namespace EducacionVirtual.App.Presentacion.Pages
    
     public class IniciarSesionModel : PageModel
     {
+        public Profesor Profesor{get; set;}
          public Estudiante Estudiante {get;set;}
         public void OnGet()
         {

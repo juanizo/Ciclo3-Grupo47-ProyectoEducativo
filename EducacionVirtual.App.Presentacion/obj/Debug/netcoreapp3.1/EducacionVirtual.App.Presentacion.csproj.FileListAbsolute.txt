@@ -83,5 +83,4 @@ D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Presentacion\bin\Debug\ne
 D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\InicioSesion\IniciarSesion.cshtml.g.cs
 D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Estudiantes\HomeEstudiante.cshtml.g.cs
 D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Profesor\RegistroProfesor.cshtml.g.cs
-D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\InicioSesion\EleccionIniciarSesion.cshtml.g.cs
-D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\InicioSesion\IniciaSesionP.cshtml.g.cs
+D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Asignaturas\Asignaturas.cshtml.g.cs

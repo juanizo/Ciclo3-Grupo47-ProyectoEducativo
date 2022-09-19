@@ -13,10 +13,27 @@ namespace EducacionVirtual.App.Presentacion.Pages
     {
         [BindProperty]
         public Profesor Profesor{get;set;}
+
+        private readonly IRepositoriosProfesor _repoProfesor;
+
+        public RegistroProfesorModel(IRepositoriosProfesor repoProfesor)
+        {
+            _repoProfesor = repoProfesor;
+        }
+
         public void OnGet()
         {
         }
 
-        
+        public async Task<IActionResult> OnPost()
+        {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            _repoProfesor.AddProfesor(Profesor);
+            return RedirectToPage("/Index");
+        }
     }
 }
