@@ -2,17 +2,46 @@
 @model EducacionVirtual.App.Presentacion.Pages.ContactoSoporteModel
 @{
 }
-<br>
-<h2 class="text-info" style="text-align: center;">Crear Paciente</h2>
-
-<div class="border">
-    <form method="post">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="container" style="padding: 30px;">
-            <div class="row">
-                <div class="col-sm-2">
-                    <label asp-for="Paciente.Nombre"></label>
-                </div>
-            </div>
-        </div>
+<div id="contenedor-contacto"> 
+<div>
+<img src="/css/Imagenes_2/coffee.jpg" width="100px" height="100px">
+ <div class="wrap">
+    <div class="wrap-texto">
+      <h1>Contactanos</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic tenetur rem quasi nulla quibusdam? Ducimus commodi temporibus quae placeat.</p>
+      <a href="#"> <i class="fa fa-phone">
+      </i>123-456-789</a>
+      <a href="#"> <i class="fa fa-envelope">
+      </i>ENKI@gmail.com</a>
+      <a href="#"> <i class="fa fa-map-marked">
+      </i> Ciudad, Pais</a>
+    </div>
+    <form action="#" autocomplete="off">
+        <input type="text" name="nombre"
+        placeholder="Ingresa tu nombre"
+        class="campo">
+        <input type="email" name="email"
+        placeholder="Ingresa tu correo"
+        class="campo">
+        <textarea> name="mensaje" placeholder="Ingresa tu mensaje">
+        </textarea>
+        <input type="submit" name="enviar"
+        value="enviar mensaje" class="btn-enviar">
+    </form>
+ </div>
+</div>
+<div>
+<img src="/css/Imagenes_2/desk.jpg" width="100px" height="100px">
+ <div class="wrap">
+    <div class="wrap-texto">
+      <h1>Texto Superpuesto</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic tenetur rem quasi nulla quibusdam? Ducimus commodi temporibus quae placeat.</p>
+</div>
+<div>
+<img src="/css/Imagenes_2/Light.jpg" width="100px" height="100px">
+ <div class="wrap">
+    <div class="wrap-texto">
+      <h1>Texto Superpuesto</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic tenetur rem quasi nulla quibusdam? Ducimus commodi temporibus quae placeat.</p>
+</div>
 </div>

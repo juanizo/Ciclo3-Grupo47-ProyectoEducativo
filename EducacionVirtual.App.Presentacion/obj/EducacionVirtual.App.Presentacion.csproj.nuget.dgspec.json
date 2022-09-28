@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "N:\\Aplicación Educativa\\EducacionVirtual.App\\EducacionVirtual.App.Presentacion\\EducacionVirtual.App.Presentacion.csproj": {}
+    "N:\\Aplicación Educativa\\EducacionVirtual.App\\educacionvirtual.app.presentacion\\EducacionVirtual.App.Presentacion.csproj": {}
   },
   "projects": {
-    "N:\\Aplicación Educativa\\EducacionVirtual.App\\EducacionVirtual.App.Presentacion\\EducacionVirtual.App.Presentacion.csproj": {
+    "N:\\Aplicación Educativa\\EducacionVirtual.App\\educacionvirtual.app.presentacion\\EducacionVirtual.App.Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\Aplicación Educativa\\EducacionVirtual.App\\EducacionVirtual.App.Presentacion\\EducacionVirtual.App.Presentacion.csproj",
+        "projectUniqueName": "N:\\Aplicación Educativa\\EducacionVirtual.App\\educacionvirtual.app.presentacion\\EducacionVirtual.App.Presentacion.csproj",
         "projectName": "EducacionVirtual.App.Presentacion",
-        "projectPath": "N:\\Aplicación Educativa\\EducacionVirtual.App\\EducacionVirtual.App.Presentacion\\EducacionVirtual.App.Presentacion.csproj",
+        "projectPath": "N:\\Aplicación Educativa\\EducacionVirtual.App\\educacionvirtual.app.presentacion\\EducacionVirtual.App.Presentacion.csproj",
         "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-        "outputPath": "N:\\Aplicación Educativa\\EducacionVirtual.App\\EducacionVirtual.App.Presentacion\\obj\\",
+        "outputPath": "N:\\Aplicación Educativa\\EducacionVirtual.App\\educacionvirtual.app.presentacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
