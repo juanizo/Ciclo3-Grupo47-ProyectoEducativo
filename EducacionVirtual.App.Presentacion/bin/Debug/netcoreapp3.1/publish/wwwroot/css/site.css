@@ -1,0 +1,253 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+h3{
+  color: #fff;
+  text-align: center;
+}
+
+label{
+  color: #fff;
+}
+
+/*Menu desplegable con boostrap*/
+#menu-des{
+  float: right;
+  display: list-item;
+  white-space: nowrap;
+  list-style: none;
+  margin-right: 230px;
+  margin-top: 10px;
+  background-color: none;
+}
+/* Provide sufficient contrast against white background */
+a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1A1D21;
+  border-color: #1A1D21;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.materia{
+  background-color: #0a0e16;
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    min-width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+article{
+  display: inline-flex;
+}
+.materia:hover{
+  background-color: #1861ac;
+}
+
+#seccion{
+ 
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 900px;
+  min-width: none;
+}
+#seccion2{
+  max-width: 400px;
+  display: table-cell;
+  background-color: #fff;
+  padding-right: 380px;
+  padding-bottom: 550px;
+  border-radius: 2px;
+}
+
+#seccion2 h4{
+  padding-left: 15px;
+}
+
+#seccion_m{
+  max-width: 1450px;
+  display: inline-table;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+#seccion3{
+  background-color: #1A1C1B;
+  padding-bottom: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+
+
+.selectedi{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.selectedi a{
+  text-align: center;
+  border-bottom: 3px solid;
+  padding-left: 210px;
+  padding-right: 210px;
+}
+
+.btnestu{
+  color: #1861ac;
+}
+
+.btnprofe{
+  color: #D5DBDB;
+}
+
+.btnestu1{
+color: #D5DBDB;
+}
+.btnprofe1{
+  color: #1861ac;
+}
+
+
+.contains{
+  background-color: #1A1D21;
+    max-width: 750px;
+    min-width: 312px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+/* Estilos para la pestaña materias*/
+
+.informacion{
+  max-width: 1450px;
+  min-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.informacion a{
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-left: 80px;
+  padding-right: 80px;
+ border-right: 1px solid ;
+}
+
+.container5{
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border: 2px solid;
+
+}
+
+.container5 h5{
+  color: #fff;
+  padding: 10px;
+}
+.container5 a{
+  padding: 10px;
+}
+
+p{
+  color: #fff;
+  padding: 10px;
+}
+
+#tema2 {
+  display: none;
+}
+#tema3 {
+  display: none;
+}
+#tema4 {
+  display: none;
+}
+#tema5 {
+  display: none;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+/*
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+ Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; 
+}
+  /* Vertically center the text there 
+
+*/

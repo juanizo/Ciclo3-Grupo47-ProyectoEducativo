@@ -4,129 +4,113 @@
   ViewData["Title"] = "Home page";
 }
 
-<div id="cuerpo">
-  <div id="encabezado">
-    <div class="navbar">
-      <a asp-page="/Index">Inicio</a>
-      <a asp-page="/Asignaturas/Asignaturas">Asignaturas</a>
-      <a asp-page="#Contacto">Contacto</a>
-      <a asp-page="/InicioSesion/IniciarSesion">Iniciar sesión</a>
-      <div id="logo"></div>
-    </div>
-  </div>
-  <div class="img-magnifier-containers">
-    <img id="myimage" src="imagenes/portada_pequena-1.jpg" width="100%" alt="" />
-  </div>
-  <script>
-    function magnify(imgID, zoom) {
-      var img, glass, w, h, bw;
-      img = document.getElementById(imgID);
-      /*create magnifier glass:*/
-      glass = document.createElement("DIV");
-      glass.setAttribute("class", "img-magnifier-glass");
-      /*insert magnifier glass:*/
-      img.parentElement.insertBefore(glass, img);
-      /*set background properties for the magnifier glass:*/
-      glass.style.backgroundImage = "url('" + img.src + "')";
-      glass.style.backgroundRepeat = "no-repeat";
-      glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-      bw = 3;
-      w = glass.offsetWidth / 2;
-      h = glass.offsetHeight / 2;
-      /*execute a function when someone moves the magnifier glass over the image:*/
-      glass.addEventListener("mousemove", moveMagnifier);
-      img.addEventListener("mousemove", moveMagnifier);
-      /*and also for touch screens:*/
-      glass.addEventListener("touchmove", moveMagnifier);
-      img.addEventListener("touchmove", moveMagnifier);
-      function moveMagnifier(e) {
-        var pos, x, y;
-        /*prevent any other actions that may occur when moving over the image*/
-        e.preventDefault();
-        /*get the cursor's x and y positions:*/
-        pos = getCursorPos(e);
-        x = pos.x;
-        y = pos.y;
-        /*prevent the magnifier glass from being positioned outside the image:*/
-        if (x > img.width - (w / zoom)) { x = img.width - (w / zoom); }
-        if (x < w / zoom) { x = w / zoom; }
-        if (y > img.height - (h / zoom)) { y = img.height - (h / zoom); }
-        if (y < h / zoom) { y = h / zoom; }
-        /*set the position of the magnifier glass:*/
-        glass.style.left = (x - w) + "px";
-        glass.style.top = (y - h) + "px";
-        /*display what the magnifier glass "sees":*/
-        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-      }
-      function getCursorPos(e) {
-        var a, x = 0, y = 0;
-        e = e || window.event;
-        /*get the x and y positions of the image:*/
-        a = img.getBoundingClientRect();
-        /*calculate the cursor's x and y coordinates, relative to the image:*/
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-        /*consider any page scrolling:*/
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
-        return { x: x, y: y };
-      }
+
+<div class="img-magnifier-containers">
+  <img id="myimage" src="imagenes/portada_pequena-1.jpg" width="100%" alt="" />
+</div>
+<script>
+  function magnify(imgID, zoom) {
+    var img, glass, w, h, bw;
+    img = document.getElementById(imgID);
+    /*create magnifier glass:*/
+    glass = document.createElement("DIV");
+    glass.setAttribute("class", "img-magnifier-glass");
+    /*insert magnifier glass:*/
+    img.parentElement.insertBefore(glass, img);
+    /*set background properties for the magnifier glass:*/
+    glass.style.backgroundImage = "url('" + img.src + "')";
+    glass.style.backgroundRepeat = "no-repeat";
+    glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+    bw = 3;
+    w = glass.offsetWidth / 2;
+    h = glass.offsetHeight / 2;
+    /*execute a function when someone moves the magnifier glass over the image:*/
+    glass.addEventListener("mousemove", moveMagnifier);
+    img.addEventListener("mousemove", moveMagnifier);
+    /*and also for touch screens:*/
+    glass.addEventListener("touchmove", moveMagnifier);
+    img.addEventListener("touchmove", moveMagnifier);
+    function moveMagnifier(e) {
+      var pos, x, y;
+      /*prevent any other actions that may occur when moving over the image*/
+      e.preventDefault();
+      /*get the cursor's x and y positions:*/
+      pos = getCursorPos(e);
+      x = pos.x;
+      y = pos.y;
+      /*prevent the magnifier glass from being positioned outside the image:*/
+      if (x > img.width - (w / zoom)) { x = img.width - (w / zoom); }
+      if (x < w / zoom) { x = w / zoom; }
+      if (y > img.height - (h / zoom)) { y = img.height - (h / zoom); }
+      if (y < h / zoom) { y = h / zoom; }
+      /*set the position of the magnifier glass:*/
+      glass.style.left = (x - w) + "px";
+      glass.style.top = (y - h) + "px";
+      /*display what the magnifier glass "sees":*/
+      glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
     }
-  </script>
-  <script>
-    /* Initiate Magnify Function
-    with the id of the image, and the strength of the magnifier glass:*/
-    magnify("myimage", 3);
-  </script>
+    function getCursorPos(e) {
+      var a, x = 0, y = 0;
+      e = e || window.event;
+      /*get the x and y positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x and y coordinates, relative to the image:*/
+      x = e.pageX - a.left;
+      y = e.pageY - a.top;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      y = y - window.pageYOffset;
+      return { x: x, y: y };
+    }
+  }
+</script>
+<script>
+  /* Initiate Magnify Function
+  with the id of the image, and the strength of the magnifier glass:*/
+  magnify("myimage", 3);
+</script>
 
-  <div id="nosotros">
-    <div id="img"></div>
-    <div id="img2"></div>
-    <div id="img3"></div>
-  </div>
-  <div id="informacion01">
-    <h2>Cursos mejor valorados</h2>
-    <p> Nuevo cursos que te ayudarán a potencializar en tu area de trabajo y lograr un mejor cargo, ahora con mejores
-      rutas de aprendizaje.</p>
-  </div>
-  <div id="cursos">
-    <div id="curso"></div>
-    <div id="curso2"></div>
-    <div id="curso3"></div>
-  </div>
-  <div id="informacion02">
-    <h2>Nuevos cursos</h2>
-    <p> Cursos que serán publicados en el transcurso del mes.</p>
-    <a href="#ver_mas">Ver más</a>
-  </div>
-  <div id="contacto">
-    <div class="cardss">
-      <img src="imagenes/c1-1.jpg" width="100%" alt="" />
-      <div class="containers">
-        <h4><b>Ciberseguridad para empresas</b></h4>
-        <p>Nivel intermedio</p>
-      </div>
+<div id="nosotros">
+  <div id="img"></div>
+  <div id="img2"></div>
+  <div id="img3"></div>
+</div>
+<div id="informacion01">
+  <h2>Cursos mejor valorados</h2>
+  <p> Nuevo cursos que te ayudarán a potencializar en tu area de trabajo y lograr un mejor cargo, ahora con mejores
+    rutas de aprendizaje.</p>
+</div>
+<div id="cursos">
+  <div id="curso"></div>
+  <div id="curso2"></div>
+  <div id="curso3"></div>
+</div>
+<div id="informacion02">
+  <h2>Nuevos cursos</h2>
+  <p> Cursos que serán publicados en el transcurso del mes.</p>
+  <a href="#ver_mas">Ver más</a>
+</div>
+<div id="contacto">
+  <div class="cardss">
+    <img src="imagenes/c1-1.jpg" width="100%" alt="" />
+    <div class="containers">
+      <h4><b>Ciberseguridad para empresas</b></h4>
+      <p>Nivel intermedio</p>
     </div>
-    <div class="cardss">
-      <img src="imagenes/c2-2.jpg" width="100%" alt="" />
-      <div class="containers">
-        <h4><b>Creación de páginas con HTML</b></h4>
-        <p>Nivel básico</p>
-      </div>
+  </div>
+  <div class="cardss">
+    <img src="imagenes/c2-2.jpg" width="100%" alt="" />
+    <div class="containers">
+      <h4><b>Creación de páginas con HTML</b></h4>
+      <p>Nivel básico</p>
     </div>
-    <div class="cardss">
-      <img src="imagenes/c3-3.jpg" width="100%" alt="" />
-      <div class="containers">
-        <h4><b>Introducción a la ciencia de datos</b></h4>
-        <p>NIvel básico</p>
-      </div>
+  </div>
+  <div class="cardss">
+    <img src="imagenes/c3-3.jpg" width="100%" alt="" />
+    <div class="containers">
+      <h4><b>Introducción a la ciencia de datos</b></h4>
+      <p>NIvel básico</p>
+    </div>
 
-    </div>
-  </div>
-  <div id="piedepagina">
-    <h3>© Copyright Enki 2022</h3>
-    <div id="back_to_top">
-      <a href="#"><img src="imagenes/b_top.png" 100%" alt="" /></a>
-    </div>
   </div>
 </div>

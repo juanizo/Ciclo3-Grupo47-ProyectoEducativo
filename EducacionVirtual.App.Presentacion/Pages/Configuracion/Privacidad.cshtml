@@ -1,0 +1,72 @@
+﻿@page
+@model EducacionVirtual.App.Presentacion.Pages.PrivacidadModel
+@{
+}
+
+<div id="contenedor-max">
+    <div class="contenedor-cuenta">
+        <div id="menu-m">
+            <div id="block">
+                <div class="disposicion">
+                    <div class="imagen-cuenta imagen-cuenta--I" style="width:100px; height:100px; font-size:36px;">
+                        <div class="avatar disposicion">
+                            <span>IMG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-m2">
+                <ul class="menu-cuenta">
+                    <li>
+                        <a asp-page="/Configuracion/Configuracion">Perfil</a>
+                    </li>
+                    <li>
+                        <a asp-page="/Configuracion/Privacidad">Contraseña</a>
+                    </li>
+                    <li>
+                        <a asp-page="/Configuracion/EliminarCuenta">Eliminar Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenedor-cuenta2">
+            <h3>Seguridad</h3>
+            
+            <div id="formulario">
+                <div class="form-group mar-1 al">
+                    <h6 style="color: #fff;">Cambio de contraseña</h6>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label > Contraseña</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input asp-for="Profesor.Name" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mar-1">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label >Nueva contraseña</label>
+                        </div>
+                        <div class= "col-sm-6">
+                            <input asp-for="Profesor.Apellidos" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mar-1">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label >Confirmar la contraseña</label>
+                        </div>
+                        <div class= "col-sm-6">
+                            <input asp-for="Profesor.Apellidos" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

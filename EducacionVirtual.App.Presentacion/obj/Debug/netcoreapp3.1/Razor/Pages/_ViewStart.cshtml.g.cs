@@ -19,8 +19,15 @@ using EducacionVirtual.App.Presentacion;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "D:\Educativa\EducacionVirtual.App\EducacionVirtual.App.Presentacion\Pages\_ViewImports.cshtml"
+using EducacionVirtual.App.Presentacion.Areas.Identity.Data;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Pages/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8b040fce23ee855156e158077aeff4f868d3ef16", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ca87383abc72eab85c7805b36d8fadad56df65ea", @"/Pages/_ViewImports.cshtml")]
     public class Pages__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

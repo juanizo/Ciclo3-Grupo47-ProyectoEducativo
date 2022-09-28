@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using EducacionVirtual.App.Persistencia;
 using EducacionVirtual.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace EducacionVirtual.App.Presentacion
 {
@@ -28,6 +29,13 @@ namespace EducacionVirtual.App.Presentacion
             services.AddRazorPages();
             services.AddSingleton<IRepositoriosProfesor, RepositoriosProfesor>();
             services.AddSingleton<IRepositoriosEstudiante, RepositoriosEstudiante>();
+            services.AddControllersWithViews();
+
+            services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
+
+            services.AddDbContext<IdentityDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("IdentityDbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +56,8 @@ namespace EducacionVirtual.App.Presentacion
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

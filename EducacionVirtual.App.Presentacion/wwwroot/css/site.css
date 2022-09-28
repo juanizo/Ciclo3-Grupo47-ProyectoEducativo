@@ -7,6 +7,10 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+h6{
+  color: #fff;
+}
+
 h3{
   color: #fff;
   text-align: center;
@@ -14,6 +18,32 @@ h3{
 
 label{
   color: #fff;
+}
+
+/*Menu desplegable con boostrap*/
+#menu-des{
+  float: right;
+  display: fixed;
+  white-space: nowrap;
+  list-style: none;
+  margin-left: 1480px;
+  margin-top: 10px;
+  background-color: none;
+  position: fixed;
+  top: 0;
+
+}
+.dropdown-menu{
+  background-color: #202124;
+   border: 0.5px solid #fff;
+}
+
+.dropdown-menu li a{
+  color: #fff;
+}
+
+.dropdown-menu li a:hover{
+  color: #0a0e16;
 }
 /* Provide sufficient contrast against white background */
 a {
@@ -24,8 +54,8 @@ a {
 
 .btn-primary {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #1A1D21;
+  border-color: #1A1D21;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -76,7 +106,7 @@ article{
 #seccion_m{
   max-width: 1450px;
   display: inline-table;
-  margin-top: 150px;
+  margin-top: 90px;
   margin-bottom: 50px;
 }
 
@@ -114,11 +144,13 @@ article{
   color: #D5DBDB;
 }
 
-
-
-#divs{
-  display: none;
+.btnestu1{
+color: #D5DBDB;
 }
+.btnprofe1{
+  color: #1861ac;
+}
+
 
 .contains{
   background-color: #1A1D21;
@@ -130,7 +162,210 @@ article{
     padding-bottom: 25px;
 }
 
+/* Estilos para la pestaña materias*/
 
+.informacion{
+  max-width: 1450px;
+  min-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.informacion a{
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-left: 80px;
+  padding-right: 80px;
+ border-right: 1px solid ;
+}
+
+.container5{
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border: 2px solid;
+
+}
+
+.container5 h5{
+  color: #fff;
+  padding: 10px;
+}
+.container5 a{
+  padding: 10px;
+}
+
+p{
+  color: #fff;
+  padding: 10px;
+}
+
+#tema2 {
+  display: none;
+}
+#tema3 {
+  display: none;
+}
+#tema4 {
+  display: none;
+}
+#tema5 {
+  display: none;
+}
+
+.titulos{
+  text-align: left;
+  margin-left: 300px;
+  margin-top: 150px;
+}
+
+/*Contenedor de la pestaña configuracion*/
+
+.contenedor-cuenta{
+  padding-left: 220px;
+  position: relative;
+}
+
+.imagen-cuenta--I {
+  border-radius: 50%;
+  color: #fff;
+  border: 1px solid;
+ 
+}
+
+.imagen-cuenta{
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+
+
+
+.avatar{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar:after{
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+.contenedor-max .contenedor-cuenta #menu-m{
+  overflow: visible;
+}
+
+#menu-m{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  position: absolute;
+  background-color: #1861ac;
+  min-height: 700px;
+}
+#contenedor-max{
+  margin: 78px;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+#block{
+  padding: 15px;
+  text-align: center;
+}
+
+.disposicion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#menu-m2{
+  margin-top: 10px;
+  border-top:1px solid ;
+}
+.menu-cuenta{
+  list-style: none;
+  font-size: 18px;
+  width: 100%;
+  max-width: none;
+  padding: 4px;
+  margin: 0;
+}
+
+.menu-cuenta li a{
+  text-decoration: none;
+  margin: 0;
+  padding-left: 4px;
+  display: block;
+  text-align: left;
+}
+.menu-cuenta li a:hover{
+  background-color: #fff;
+  color: #0a0e16;
+
+}
+
+/* Contenedor, gestion de la cuenta*/
+
+ .contenedor-cuenta2{
+  position: relative;
+  min-height: 700px;
+}
+
+#formulario{
+  margin: 80px;
+  border-bottom: 1px solid #D5DBDB;
+  border-top: 1px solid #D5DBDB;
+  padding-bottom: 170px;
+
+}
+
+.mar-1{
+  padding: 15px;
+  margin: 12px;
+ 
+}
+
+.al{
+  margin-top: 45px;
+}
+
+/*Pestaña estudiantes*/
+
+.grupos{
+  max-width: 200px;
+  margin-left: 100px;
+  display: inline;
+  color: #fff;
+}
+
+.grupos a{
+  padding: 100px;
+  color: #fff;
+  background-color: #0a0e16;
+}
+
+#container-grupos{
+  margin-top: 180px;
+  margin-bottom: 443px;
+}
+
+.grupos a:hover{
+  background-color: #1b6ec2;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -182,3 +417,27 @@ body {
   /* Vertically center the text there 
 
 */
+
+
+/* Formato de la imagen*/
+#contenedor-contacto {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrap-e {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(/coffee.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap-texto-f {
+  color: #fff;
+  text-align: center;
+  width: 50%;
+}

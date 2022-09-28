@@ -1,31 +1,59 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EducacionVirtual.App.Presentacion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/css/estilos_pag.css" rel="stylesheet" type="text/css">
     <style type="text/css"></style>
 </head>
-<body style = "background-color: #202124; " >
-    
-    <div>
-        
-        <main>
-            @RenderBody()
-        </main>
-    </div>
 
- 
+<body style="background-color: #202124; ">
+
+    <div id="cuerpo">
+        <header id="encabezado">
+            <div class="navbar">
+                <a asp-page="/Index">Inicio</a>
+                <a asp-page="/Asignaturas/Asignaturas">Asignaturas</a>
+                <a asp-page="/Contacto/ContactoSoporte">Contacto</a>
+               <partial name= "_LoginPartial"/>
+                <div id="logo"></div>
+               
+            </div>
+            
+        </header>
+
+        <div>
+
+            <main>
+                @RenderBody()
+            </main>
+        </div>
+
+        <div id="piedepagina">
+            <h3>© Copyright Enki 2022</h3>
+            <div id="back_to_top">
+                <a href="#"><img src="imagenes/b_top.png" 100%" alt="" /></a>
+            </div>
+        </div>
+    </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <script src="~/js/jscript01.js"></script>
+    <script src="~/js/jscript02.js"></script>
+    <script src="~/js/jscript03.js"></script>
+    <script src="~/js/menu_fijar.js"></script>
     @RenderSection("Scripts", required: false)
 
-    
+
 </body>
+
 </html>
